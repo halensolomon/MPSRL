@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37DD3A212BC05407004A81D9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37DD3A202BC05407004A81D9 /* main.cpp */; };
+		37DD3A292BC1E8E3004A81D9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD3A282BC1E8E3004A81D9 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		37DD3A1D2BC05407004A81D9 /* MPSRL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MPSRL; sourceTree = BUILT_PRODUCTS_DIR; };
-		37DD3A202BC05407004A81D9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		37DD3A282BC1E8E3004A81D9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,7 @@
 		37DD3A142BC05407004A81D9 = {
 			isa = PBXGroup;
 			children = (
-				37DD3A1F2BC05407004A81D9 /* MPSRL */,
+				37DD3A282BC1E8E3004A81D9 /* main.swift */,
 				37DD3A1E2BC05407004A81D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +52,6 @@
 				37DD3A1D2BC05407004A81D9 /* MPSRL */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		37DD3A1F2BC05407004A81D9 /* MPSRL */ = {
-			isa = PBXGroup;
-			children = (
-				37DD3A202BC05407004A81D9 /* main.cpp */,
-			);
-			path = MPSRL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +85,7 @@
 				TargetAttributes = {
 					37DD3A1C2BC05407004A81D9 = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -119,7 +112,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37DD3A212BC05407004A81D9 /* main.cpp in Sources */,
+				37DD3A292BC1E8E3004A81D9 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,20 +237,27 @@
 		37DD3A252BC05407004A81D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8N289BDG65;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MPSRL-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		37DD3A262BC05407004A81D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8N289BDG65;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MPSRL-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

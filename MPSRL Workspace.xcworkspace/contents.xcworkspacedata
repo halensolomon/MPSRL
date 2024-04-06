@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:"
+      name = "">
+      <FileRef
+         location = "group:main.swift">
+      </FileRef>
+      <FileRef
+         location = "group:MPSRL Workspace.xcworkspace">
+      </FileRef>
+      <FileRef
+         location = "group:MPSRL.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
